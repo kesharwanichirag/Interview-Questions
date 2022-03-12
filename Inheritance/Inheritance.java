@@ -14,6 +14,8 @@ class B extends	A
 
 //multiple inheritance(not supported in java)
 //this is nothing but diamond access problem occur in java
+//let us suppose we have method name as m1 in both class A and B so class C will not
+//determine the method thus ambiguity occur in this thus it is also know as DIAMOND ACCESS PROBLEM
 class A
 {
 }
@@ -24,7 +26,7 @@ class C extends A,B
 {
 }
 
-//The alternative of inheritance is interface
+//The alternative way to achieve the  multiple inheritance in java  is interface
 interface A
 {
 	
@@ -36,6 +38,7 @@ interface B
 class C implements A,B{
 	
 }
+
 //we can also inherited the interface
 interface C extends B
 {
